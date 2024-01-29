@@ -1,8 +1,8 @@
 import { Metadata } from "next";
-import TitlePage from "@/app/TitlePage";
-import OurWorksPage from "@/app/OurWorksPage";
-import About from "@/app/About";
-import Brands from "@/app/Brands";
+import TitlePage from "@/components/Pages/TitlePage";
+import OurWorksPage from "@/components/Pages/OurWorksPage";
+import About from "@/components/Pages/AboutPage";
+import Brands from "@/components/Pages/BrandsPage";
 
 export const metadata: Metadata = {
   title: "Главная",
@@ -17,7 +17,7 @@ export default function Home() {
       <TitlePage />
       <About />
       <OurWorksPage />
-      <Brands/>
+      <Brands />
     </div>
   );
 }

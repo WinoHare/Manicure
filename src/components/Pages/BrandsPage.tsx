@@ -3,9 +3,9 @@ import Image from "next/image";
 
 type BrandsProps = {};
 
-export default function Brands({}: BrandsProps) {
+export default function BrandsPage({}: BrandsProps) {
   return (
-    <div className={"mt-20 mr-60 ml-60 flex justify-evenly"}>
+    <div className={"mt-20 flex justify-evenly"}>
       {brands.map((brand) => (
         <Image
           src={brand.imageSrc}

@@ -2,15 +2,15 @@ import Image from "next/image";
 
 type AboutProps = {};
 
-export default function About({}: AboutProps) {
+export default function AboutPage({}: AboutProps) {
   return (
-    <div className={"mt-20 ml-60 mr-60 flex flex-col items-center"}>
+    <div className={"mt-16 flex flex-col items-center"}>
       <Image
         src={"/quote.svg"}
         alt={"Кавычка"}
         width={64}
         height={64}
-        className={"mb-20"}
+        className={"mb-16"}
       />
       <div className={"flex justify-between w-full items-center"}>
         <p className={"font-CormGara text-white text-lg inline-block w-[40rem]"}>

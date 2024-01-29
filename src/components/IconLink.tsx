@@ -11,5 +11,5 @@ type IconLinkProps = {
 }
 
 export default function IconLink({to, src, alt, height, width, title}: IconLinkProps) {
-	return <Link href={to}><abbr title={title}><Image src={src} alt={alt} width={width} height={height}/></abbr></Link>
+	return <Link href={to} className={'hover:opacity-70 transition-opacity'}><abbr title={title}><Image src={src} alt={alt} width={width} height={height}/></abbr></Link>
 }

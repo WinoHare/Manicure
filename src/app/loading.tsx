@@ -1,12 +1,11 @@
-'use client'
+"use client";
 
-import {InfinitySpin} from "react-loader-spinner";
+import {CircleLoader} from "react-spinners";
 
-type loadingProps = {}
+type loadingProps = {};
 
-export default function loading({}: loadingProps) {
-	return <InfinitySpin
-		width="200"
-		color="#FFFFFF"
-	/>;
+export default function Loading({}: loadingProps) {
+  return <div className={"absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"}>
+    <CircleLoader color={'#FFF'}/>
+  </div>;
 }

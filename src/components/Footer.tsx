@@ -5,10 +5,10 @@ type FooterProps = {};
 
 export default function Footer({}: FooterProps) {
   return (
-    <div>
+    <footer>
       <div
         className={
-          "border-t-white border-b-white border-b border-t  opacity-70 pb-12 pt-12 mr-60 ml-60 mt-20 mb-8 flex justify-between"
+          "border-t-white border-b-white border-b border-t opacity-70 pb-12 pt-12 mr-60 ml-60 mb-4 flex justify-between flex-grow-0 flex-shrink-0 basis-auto"
         }
       >
         <Image src={"/icon.svg"} alt={"Логотип"} height={50} width={50} />
@@ -41,9 +41,6 @@ export default function Footer({}: FooterProps) {
           </div>
         </div>
       </div>
-      <p className={"font-CormGara text-white text-center mb-8"}>
-        Copyright © 2024
-      </p>
-    </div>
+    </footer>
   );
 }

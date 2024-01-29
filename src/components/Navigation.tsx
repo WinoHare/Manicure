@@ -5,7 +5,7 @@ type NavigationProps = {};
 
 export default function Navigation({}: NavigationProps) {
   return (
-    <div className="absolute flex justify-between pt-4 pb-4 border-b border-b-white items-center mr-60 ml-60  w-[calc(100%-30rem)] z-50">
+    <div className="absolute top-0 flex justify-between pt-4 pb-4 border-b border-b-white items-center mr-60 ml-60  w-[calc(100%-30rem)] z-50">
       <IconLink
         to={"/"}
         src={"/icon.svg"}
@@ -14,8 +14,8 @@ export default function Navigation({}: NavigationProps) {
         width={50}
       />
       <NavLink to={"/"}>Главная</NavLink>
-      <NavLink to={"/works"}>Работы</NavLink>
       <NavLink to={"/price"}>Прайс</NavLink>
+      <NavLink to={"/reviews"}>Отзывы</NavLink>
       <NavLink to={"/contacts"}>Контакты</NavLink>
       <IconLink
         to={"/"}
